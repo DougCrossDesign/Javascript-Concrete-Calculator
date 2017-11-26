@@ -1,0 +1,193 @@
+<div style="">
+	<div class="serving">
+		<table style="" height="100%" cellpadding="0" cellspacing="0" width="100%">
+			<tbody><tr valign="top">
+				<td>
+					
+					<div id="navsite">
+						<ul>
+							<li id="input1"><a class="current" href="javascript:;" onclick="cur(this); sh('slabs','footings','columns','getit'); test('input1','input2','input3','input4');">Slabs</a></li>
+
+							<li id="input2"><a class="" href="javascript:;" onclick="cur(this);  sh('footings','slabs','columns','getit'); test('input2','input1','input3','input4');">Footings</a></li>
+							<li id="input3"><a class="" href="javascript:;" onclick="cur(this); sh('columns','slabs','footings','getit'); test('input3','input2','input1','input4');">Columns</a></li>
+						</ul>
+					</div>
+					<div class="form-fields">
+						<div class="list on" id="slabs">
+
+							<form name="SlabCalculator">
+                
+								<table>
+									<tbody><tr>
+										<td class="calc-fields">							
+											<table border="0">
+												<tbody><tr>
+													<td align="left" class="label">Thickness</td>
+													<td align="left" class="field"><input name="Thickness" size="1" type="text"></td>
+
+													<td><em>inches</em></td>
+												</tr>
+												<tr>
+													<td align="left" class="label">Width</td>
+													<td align="left" class="field"><input name="Width" size="1" type="text"></td>
+													<td><em>feet</em></td>
+												</tr>
+
+												<tr>
+													<td align="left" class="label">Length</td>
+													<td align="left"  class="field"><input name="Length" size="1" type="text"></td>
+													<td><em>feet</em></td>
+												</tr>
+												<tr class="btns" >
+													<td class="btn" align="left"><input value="Reset" onclick="hidebags('bagsone');" type="reset"></td>
+													<td class="btn" align="left"><input onclick="showbags('bagsone'); calculateSlabPour()" value="Calculate" type="button"></td>
+
+												</tr>
+											</tbody></table>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="2">
+											<div class="list" id="bagsone">
+                        <table>
+												<tbody><tr>
+													<td align="left" class="label field">Cubic Yards <input name="CubicYards" size="3" type="text"></td>
+
+												</tr>
+											</tbody></table>
+												<table>
+													<tbody><tr>
+														<td colspan="3" align="left"><strong>How many Pre-Mix Concrete Bags</strong></td>
+													</tr>
+													<tr>
+
+														<td class="label field">40# Bags:<br><input name="Bags40" size="3" type="text"></td>
+														<td class="label field">60# Bags:<br><input name="Bags60" size="3" type="text"></td>
+														<td class="label field">80# Bags:<br><input name="Bags80" size="3" type="text"></td>
+													</tr>
+												</tbody></table>
+											</div>
+										</td>
+									</tr>
+								</tbody></table>
+							</form>
+						</div>
+						<div class="list" id="footings">
+							<form name="FootingCalculator">
+								<table>
+									<tbody><tr>
+
+										<td>
+											<table border="0">
+												<tbody><tr>
+													<td align="left" class="label">Depth</td>
+													<td align="left" class="field"><input name="Depth" size="1" type="text"></td>
+													<td><em>inches</em></td>
+												</tr>
+												<tr>
+
+													<td align="left" class="label">Width</td>
+													<td align="left" class="field"><input name="Width" size="1" type="text"></td>
+													<td><em>inches</em></td>
+												</tr>
+												<tr>
+													<td align="left" class="label">Length</td>
+													<td align="left" class="field"><input name="Length" size="1" type="text"></td>
+
+													<td><em>feet</em></td>
+												</tr>
+												<tr>
+													<td align="left"><input value="Reset" onclick="hidebags('bagstwo');" type="reset"></td>
+													<td align="left"><input onclick="showbags('bagstwo'); calculateFootingPour()" value="Calculate" type="button"></td>
+												</tr>
+											</tbody></table>
+										</td>
+
+									</tr>
+									<tr>
+										<td colspan="2">
+											<div class="list" id="bagstwo">
+                        <table>
+												<tbody><tr>
+													<td align="left" class="label field">Cubic Yards <input name="CubicYards" size="3" type="text"></td>
+
+												</tr>
+											</tbody></table>
+												<table>
+													<tbody><tr>
+														<td colspan="3" align="left"><strong>How many Pre-Mix Concrete Bags</strong></td>
+													</tr>
+													<tr>
+
+														<td class="label field">40# Bags:<br><input name="Bags40" size="3" type="text"></td>
+														<td class="label field">60# Bags:<br><input name="Bags60" size="3" type="text"></td>
+														<td class="label field">80# Bags:<br><input name="Bags80" size="3" type="text"></td>
+													</tr>
+												</tbody></table>
+											</div>
+										</td>
+									</tr>
+								</tbody></table>
+							</form>
+
+						</div>
+						<div class="list" id="columns">
+							<form name="ColumnCalculator">
+								<table>
+									<tbody><tr>
+										<td>
+											<table border="0">
+												<tbody><tr>
+
+													<td align="left" class="label">Diameter</td>
+													<td align="left" class="field"><input name="Diameter" size="1" type="text"></td>
+													<td><em>inches</em></td>
+												</tr>
+												<tr>
+													<td align="left" class="label">Height</td>
+													<td align="left" class="field"><input name="Height" size="1" type="text"></td>
+
+													<td><em>inches</em></td>
+												</tr>
+												<tr>
+													<td align="left"><input onclick="hidebags('bagsthree');" value="Reset" type="reset"></td>
+													<td colspan="2" align="left"><input onclick="showbags('bagsthree'); calculateColumnPour()" value="Calculate" type="button"></td>
+
+												</tr>
+											</tbody></table>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="2">
+											<tr>
+										<td colspan="2">
+											<div class="list" id="bagsthree">
+                        <table>
+												<tbody><tr>
+													<td align="left" class="label field">Cubic Yards <input name="CubicYards" size="3" type="text"></td>
+
+												</tr>
+											</tbody></table>
+												<table>
+													<tbody><tr>
+														<td colspan="3" align="left"><strong>How many Pre-Mix Concrete Bags</strong></td>
+													</tr>
+													<tr>
+
+														<td class="label field">40# Bags:<br><input name="Bags40" size="3" type="text"></td>
+														<td class="label field">60# Bags:<br><input name="Bags60" size="3" type="text"></td>
+														<td class="label field">80# Bags:<br><input name="Bags80" size="3" type="text"></td>
+													</tr>
+												</tbody></table>
+											</div>
+										</td>
+									</tr>
+								</tbody></table>
+							</form>
+						</div>
+					</div>
+				</td>
+			</tr>
+		</tbody></table>
+	</div>
+</div>

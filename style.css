@@ -1,0 +1,258 @@
+* {
+  padding:0;
+  margin:0;
+}
+
+body {
+	font-family:Arial, Helvetica, sans-serif;
+  width:100%;
+  padding:0;
+  margin:0;
+}
+
+.forms{
+  top:24px;
+  position:relative;
+}
+
+#slabs, #footings, #columns{
+  width: 100%;
+  padding: 4% 0%;
+  margin: 0;
+}
+
+.form-img{
+  width:20%
+}
+
+.form-fields, .result-fields{
+    width: 100%;
+    text-align: left;
+    font-size: 1.25em;
+    line-height: 2em;
+}
+
+.form-fields table, .result-fields table{
+  width: 100% !important;
+}
+
+.form-fields table td, .result-fields table td{
+    padding: 1% 0% 1% 1%;
+}
+
+.diagram{ width: 20% !important; }
+
+#bagsone table, #bagstwo table, #bagsthree table{
+  width:100%;
+}
+
+#bagsone td.field input, #bagsotwo td.field input, #bagsthree td.field input{
+  width:33.33%
+}
+
+#bagsone table td.field, #bagstwo table td.field, #bagsthree table td.field {
+    width: 25% !important;
+  display: inline-block;
+}
+
+.form-fields table td.label, .result-fields table td.label {
+  width: 10% !important;
+  padding-bottom: 2% !important;
+}
+
+.form-fields table td.field, .result-fields table td.field {
+  width: 75% !important;
+}
+
+.form-fields table td.field input, .result-fields table td.field input {
+    width: 80%;
+    padding: 0px 8%;
+    text-align:center;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 50px;
+    color: #5f5f5f;
+    background-color: #eeeeee;
+    border: none;
+    border-radius: 0;
+    background-image: none;
+    webkit-transition: all 400ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    -moz-transition: all 400ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    -o-transition: all 400ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transition: all 400ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
+}
+}
+
+em{
+    top: -8%;
+    position: relative;
+}
+
+input[type="reset"], input[type="button"] {
+    font-weight: bold !important;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: rgb(151, 14, 31);
+    line-height: 40px;
+    width: auto;
+    padding: 0px 30px;
+    margin: 0 auto;
+    border: none;
+}
+
+h1 {
+  margin:0;
+  font-size:1em;
+  text-align:center;
+  color:#333333;
+}
+
+form img{
+  width:80%;
+  height:auto;
+}
+
+a:link {
+  color:#036;
+}
+
+a:visited {
+  color:#369;
+}
+
+a:hover {
+  color:#39c;
+}
+
+a img {
+	border:0;
+}
+
+.left {
+  float:left;
+  margin-right:1em;
+  margin-bottom:5px;
+}
+
+.left p, .right p, .clear p {
+margin:0;
+}
+
+
+
+.right {
+  float:right;
+  margin-left:1em;
+  margin-bottom:5px;
+}
+
+.clear {
+  clear:both;
+  margin-bottom:5px;
+}	
+
+.imgborder img {
+	border:1px solid #036;
+}
+
+.small {
+	font-size:.8em;
+}
+
+.center {
+	text-align:center;
+}
+
+input {
+	text-align:right;
+}
+
+/*Show/Hide------------------------------------------------------*/
+.serving {
+	clear:both;
+  width: 100%;
+  margin: 0px auto;
+}
+
+.serving table form{
+  background: #FFFFFF;
+}
+
+.serving .list {
+	display:none;
+	margin:10px;
+}
+
+.serving .on {
+	display:block;
+}
+
+.serving label {
+	color:#036;
+	text-decoration:underline;
+	cursor:pointer;
+}
+
+/* Nav---------------------------------------------------------*/
+
+#navsite {
+	list-style:none;
+	padding:0;
+	margin: 0;
+  width:100%;
+}
+
+#navsite ul {
+  padding:0;
+  margin:0;
+  list-style:none;
+  display:block;
+}
+
+#navsite ul li a {
+  display:block;
+  float:left;
+  background:#181818;
+	text-decoration:none;
+	font-weight:200;
+  color:#ffffff !important;
+  line-height: 1em;
+  font-size:1em;
+  padding:1em .5em;
+  text-align:center;
+  text-transform:uppercase;
+  margin:0 auto;
+  width:30%;
+  border:1px #ffffff solid;
+}
+
+#navsite a:link, #navsite a:visited {
+  color:#000;
+}
+
+#navsite li a.current {
+  background: #970E1F !important;
+}
+
+#navsite li.current a {
+  color:#ffffff;
+  line-height: 1em;
+  font-size:1em;
+  text-transform:uppercase;
+  margin:0 auto;
+  background: #970E1F !important;
+}
+
+/* Search
+
+--------------------------------------------------*/
+
+#srchUtil .search-txt {
+  width:7em;
+  vertical-align:middle;
+  font-size: .8em;
+}
+
+#srchUtil .search-btn {
+  vertical-align:middle;
+}
